@@ -16,8 +16,12 @@ public class Lion {
         }
     }
 
-    Feline feline = new Feline();
 
+
+    public Lion(Feline feline) {
+        this.feline = feline;
+    }
+     Feline feline;
     public int getKittens() {
         return feline.getKittens();
     }
@@ -28,5 +32,6 @@ public class Lion {
 
     public List<String> getFood() throws Exception {
         return feline.getFood("Хищник");
+
     }
 }
